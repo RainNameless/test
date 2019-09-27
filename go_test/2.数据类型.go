@@ -9,17 +9,17 @@ import "fmt"
 
 func main() {
 	// 布尔型
-	fmt.Println("布尔型")
+	fmt.Println("一.布尔类型")
 	var bool1, bool2 bool = false, true // 布尔型的值只可以是常量 true 或者 false
 	fmt.Printf("  a1=%s 	a2=%s \n\n ", bool1, bool2)
 
-	// 数字类型
+	fmt.Println("二.数字类型")
 	fmt.Println("无符号整形")
 	var uint_8 uint8 = 255     // uint8,无符号8位整形,存储空间8bit，值范围0 ~ 255.
 	var uint_16 uint16 = 65535 // uint16,无符号16位整形,存储空间16bit,值范围0 ~65535
 	var uint_32 uint32 = 4294967295
 	var uint_64 uint64 = 18446744073709551615
-	fmt.Printf("  uint_8=%d\n  uint_16=%d\n  uint_32=%d\n  uint_64=%d\n", uint_8, uint_16, uint_32, uint_64)
+	fmt.Printf("  uint_8=%d\n  uint_16=%d\n  uint_32=%d\n  uint_64=%d\n\n", uint_8, uint_16, uint_32, uint_64)
 
 	fmt.Println("整形")
 	var int_ int = -9999999999999
@@ -30,8 +30,22 @@ func main() {
 	fmt.Printf("  int_=%d\n  int_8=%d\n  int_16=%d\n  int_32=%d\n  int_64=%d\n\n", int_, int_8, int_16, int_32, int_64)
 
 	fmt.Println("浮点数")
-	var float_32 float32 = 1.401298464324817070923729583289916131280e-45
-	var float_64 float64 = 4.940656458412465441765687928682213723651e-324
-	fmt.Printf("  float_32=%d  float_64=%d \n", float_32, float_64)
+	var float_32 float32 = 1.12345678
+	var float_64 float64 = 1.12345678901234567
+	fmt.Printf("  float_32=%f\n  float_64=%v \n\n", float_32, float_64)
+
+	fmt.Println("复数形")
+	var complex_64 complex64 = 1.12345678 + 1.12345678i
+	var complex_128 complex128 = 2.1234567890123456 + 2.1234567890123456i
+	fmt.Printf("  complex_64=%v\n  complex_128=%v \n\n", complex_64, complex_128)
+
+	fmt.Println("字符型")
+	var byte_ byte = 'a'
+	var rune_ rune = '符'
+	fmt.Printf("  byte_=%v\n  rune_=%v\n\n", byte_, rune_)
+
+	fmt.Println("指针地址")
+	var uintptr_ uintptr = 18446744073709551615
+	fmt.Printf("  uintptr_=%v\n\n", uintptr_)
 
 }
