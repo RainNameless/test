@@ -48,4 +48,13 @@ func main() {
 	var uintptr_ uintptr = 18446744073709551615
 	fmt.Printf("  uintptr_=%v\n\n", uintptr_)
 
+	fmt.Println("三.字符串")
+	var string_1 string = `link`
+	var string_2 string = "字符串"
+	var string_3 string = string_1 + "" + string_2
+
+	fmt.Println(string_1)
+	fmt.Println(string_2)
+	fmt.Println(string_3)
+
 }
