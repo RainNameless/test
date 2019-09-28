@@ -46,6 +46,6 @@ func main() {
 
 	fmt.Println("指针地址")
 	var uintptr_ uintptr = 18446744073709551615
-	fmt.Printf("  uintptr_=%v\n\n", uintptr_)
+	fmt.Printf("  uintptr111_=%v\n\n", uintptr_)
 
 }
